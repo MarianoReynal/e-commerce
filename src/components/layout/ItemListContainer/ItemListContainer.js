@@ -1,4 +1,5 @@
 import React from 'react'
+import './ItemListContainer.scss'
 
 function ItemListContainer({greeting, usuario}) {
     return (
