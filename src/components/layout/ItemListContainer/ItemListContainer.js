@@ -1,14 +1,38 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './ItemListContainer.scss'
-import {ProductCard} from "../ProductCard/ProductCard"
+import { pedirDatos } from '../../../helpers/pedirDatos'
+import { ItemList } from '../ItemList/ItemList'
 
-function ItemListContainer({greeting, usuario}) {
+function ItemListContainer() {
+    
+    const [loading, setLoading] = useState(false)
+    const [productos, setProductos] = useState([])
+
+    useEffect(() => {
+        
+        setLoading(true)
+        pedirDatos()
+            .then( (resp) => {
+                setProductos(resp)
+            })
+            .catch( (error) => {
+                console.log(error)
+            })
+            .finally(() => {
+                setLoading(false)
+            })
+
+    }, [])
+    
+    
     return (
-        <div>
-            <h1>{greeting}</h1>
-            <h2>{usuario}</h2>
-            <ProductCard/>
-        </div>
+        <>
+            {
+                loading 
+                    ? <h2>Cargando...</h2> 
+                    : <ItemList items={productos}/>
+            }
+        </>
     )
 }
 
