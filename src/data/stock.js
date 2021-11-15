@@ -4,7 +4,7 @@ export const stock = [
         price: 1500,
         name: "Camisa",
         desc: "Camisa para fiestas",
-        img: "../../public/assets/img/camisa.jpg"
+        img: 'img src={require("public/assets/img/camisa.jpg")}',
     },
     {
         id: 2,
