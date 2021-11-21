@@ -1,10 +1,18 @@
+import camisa from '../../src/assets/img/camisa.jpg'
+import jean from '../../src/assets/img/jean.jpg'
+import remera from '../../src/assets/img/remera.jpg'
+import short from '../../src/assets/img/short.jpg'
+import chomba from '../../src/assets/img/chomba.jpg'
+import buzo from '../../src/assets/img/buzo.jpg'
+
+
 export const stock = [
     {
         id: 1,
         price: 1500,
         name: "Camisa",
         desc: "Camisa para fiestas",
-        img: '../../../../assets/img/camisa.jpg',
+        img: camisa,
         category: 'camisas',
     },
     {
@@ -12,7 +20,7 @@ export const stock = [
         price: 2500,
         name: "Jean",
         desc: "Jean achupinado",
-        img: '../../../../assets/img/jean.jpg', 
+        img: jean, 
         category: 'jeans',
     },
     {
@@ -20,7 +28,7 @@ export const stock = [
         price: 3500,
         name: "Remera",
         desc: "Remera manga corta",
-        img: "../../../../assets/img/remera.jpg",
+        img: remera,
         category: 'remeras',
     },
     {
@@ -28,7 +36,7 @@ export const stock = [
         price: 4500,
         name: "Short",
         desc: "Short achupinado",
-        img: "../../../../assets/img/short.jpg",
+        img: short,
         category: 'shorts',
     },
     {
@@ -36,7 +44,7 @@ export const stock = [
         price: 5500,
         name: "Chomba",
         desc: "Chomba con botones",
-        img: "../../../../assets/img/chomba.jpg",
+        img: chomba,
         category: 'chombas',
     },
     {
@@ -44,7 +52,7 @@ export const stock = [
         price: 6500,
         name: "Buzo",
         desc: "Buzo para salir",
-        img: "../../../../assets/img/buzo.jpg",
+        img: buzo,
         category: 'buzos',
     },
 ]

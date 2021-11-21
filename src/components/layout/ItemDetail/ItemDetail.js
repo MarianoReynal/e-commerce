@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router'
+import {ItemCount} from '../ItemCount/ItemCount'
 
 export const ItemDetail = ({id, name, img, desc, price, category}) => {
 
@@ -20,7 +21,7 @@ export const ItemDetail = ({id, name, img, desc, price, category}) => {
             <p>{desc}</p>
             <p>Precio: ${price}</p>
 
-            {/* contador con opcion de agregar */}
+            <ItemCount/>
 
             <button className="btn btn-primary" onClick={handleVolver}>Volver</button>
             <button className="btn btn-outline-primary" onClick={handleVolverInicio}>Volver al inicio</button>
