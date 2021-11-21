@@ -5,13 +5,15 @@ export const stock = [
         name: "Camisa",
         desc: "Camisa para fiestas",
         img: 'img src={require("assets/img/camisa.jpg")}',
+        category: 'camisas',
     },
     {
         id: 2,
         price: 2500,
         name: "Jean",
         desc: "Jean achupinado",
-        img: "assets/img/jean.jpg",
+        img : "assets/img/jean.jpg",
+        category: 'jeans',
     },
     {
         id: 3,
@@ -19,6 +21,7 @@ export const stock = [
         name: "Remera",
         desc: "Remera manga corta",
         img: "../assets/img/remera.jpg",
+        category: 'remeras',
     },
     {
         id: 4,
@@ -26,6 +29,7 @@ export const stock = [
         name: "Short",
         desc: "Short achupinado",
         img: "../assets/img/short.jpg",
+        category: 'shorts',
     },
     {
         id: 5,
@@ -33,6 +37,7 @@ export const stock = [
         name: "Chomba",
         desc: "Chomba con botones",
         img: "../assets/img/chomba.jpg",
+        category: 'chombas',
     },
     {
         id: 6,
@@ -40,5 +45,6 @@ export const stock = [
         name: "Buzo",
         desc: "Buzo para salir",
         img: "../assets/img/buzo.jpg",
+        category: 'buzos',
     },
 ]

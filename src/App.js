@@ -1,15 +1,22 @@
-import './App.css';
-import ItemListContainer from './components/layout/ItemListContainer/ItemListContainer';
+import React from 'react';
 import NavBar from './components/layout/NavBar/NavBar';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter} from 'react-router-dom';
+import { AppRouter } from './router/AppRouter';
 
 function App() {
+
+
   return (
-    <div >
-      <NavBar/>
-      <ItemListContainer />
-      
-    </div>
+      <BrowserRouter>
+     
+          <NavBar/>
+          <AppRouter/>
+
+          {/* <Footer/> */}
+        
+
+      </BrowserRouter>
   );
 }
 
