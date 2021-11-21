@@ -1,7 +1,9 @@
 import React,{useState} from "react";
 import {button} from "react-bootstrap"
 
-export const ItemCount = ({stock}) =>{
+const stock = 10 ;
+export const ItemCount = () =>{
+   
     const[counter,setCounter] = useState(1);
 
     const incrementar = () =>{
@@ -22,7 +24,7 @@ export const ItemCount = ({stock}) =>{
     }
     
     const respuesta = () =>{
-        alert ("Agregaste ${counter}")
+        alert (counter)
     }
 
 
