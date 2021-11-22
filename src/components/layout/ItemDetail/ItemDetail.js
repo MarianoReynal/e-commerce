@@ -16,10 +16,10 @@ export const ItemDetail = ({id, name, img, desc, price, category}) => {
 
     return (
         <div>
-            <h2>{name}</h2>
+            <h2 className='text-center'>{name}</h2>
             <img src={img} alt={name}/>
-            <p>{desc}</p>
-            <p>Precio: ${price}</p>
+            <p className='text-center'>{desc}</p>
+            <p className='text-center'>Precio: ${price}</p>
 
             <ItemCount/>
 
