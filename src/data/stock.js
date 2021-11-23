@@ -14,6 +14,7 @@ export const stock = [
         desc: "Camisa para fiestas",
         img: camisa,
         category: 'camisas',
+        stock: 10,
     },
     {
         id: 2,
@@ -22,6 +23,7 @@ export const stock = [
         desc: "Jean achupinado",
         img: jean, 
         category: 'jeans',
+        stock: 10,
     },
     {
         id: 3,
@@ -30,6 +32,7 @@ export const stock = [
         desc: "Remera manga corta",
         img: remera,
         category: 'remeras',
+        stock: 10,
     },
     {
         id: 4,
@@ -38,6 +41,7 @@ export const stock = [
         desc: "Short achupinado",
         img: short,
         category: 'shorts',
+        stock: 10,
     },
     {
         id: 5,
@@ -46,6 +50,7 @@ export const stock = [
         desc: "Chomba con botones",
         img: chomba,
         category: 'chombas',
+        stock: 10,
     },
     {
         id: 6,
@@ -54,5 +59,6 @@ export const stock = [
         desc: "Buzo para salir",
         img: buzo,
         category: 'buzos',
+        stock: 10,
     },
 ]
