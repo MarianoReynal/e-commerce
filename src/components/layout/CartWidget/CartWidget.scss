@@ -1,3 +1,18 @@
 .CartWidget{
     font-size: 40px;
 }
+.widget {
+    visibility: visible;
+    opacity: 1;
+    transition: all .5s ease-in-out;
+}
+
+.cartWidget {
+    font-size: 40px;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}

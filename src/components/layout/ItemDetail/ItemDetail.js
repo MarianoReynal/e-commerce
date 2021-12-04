@@ -7,7 +7,6 @@ import { ItemCount } from '../ItemCount/ItemCount'
 export const ItemDetail = ({id, name, img, desc, price, category, stock}) => {
 
     const {agregarAlCarrito, isInCart} = useContext(CartContext)
-    
 
     const navigate = useNavigate()
     
