@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router'
 import { Link } from 'react-router-dom'
 import { CartContext } from '../../../context/CartContext'
 import { ItemCount } from '../ItemCount/ItemCount'
+import './ItemDetail.scss'
 
 export const ItemDetail = ({id, name, img, desc, price, category, stock}) => {
 
@@ -33,25 +34,33 @@ export const ItemDetail = ({id, name, img, desc, price, category, stock}) => {
     }
 
     return (
-        <div>
-            <h2>{name}</h2>
-            <img src={img} alt={name}/>
-            <p>{desc}</p>
-            <p>Precio: ${price}</p>
+        <div className="container">
+            <div className="row">
+                
+                <div className="col-lg-6 col-xs-6">
+                    <img src={img} alt={name} className="imgDetail"/>
+                </div>  
+                <div className="col-lg-6 col-xs-6">   
+                    <h2>{name}</h2>
+                    <p>{desc}</p>
+                    <p>Precio: ${price}</p>
 
-            {
-                !isInCart(id)
-                    ?   <ItemCount 
-                            max={stock} 
-                            cantidad={cantidad} 
-                            setCantidad={setCantidad}
-                            onAdd={handleAgregar}
-                        />
-                    :   <Link to="/cart" className="btn btn-success d-block">Terminar mi compra</Link>
-            }
+                    {
+                        !isInCart(id)
+                            ?   <ItemCount 
+                                    max={stock} 
+                                    cantidad={cantidad} 
+                                    setCantidad={setCantidad}
+                                    onAdd={handleAgregar}
+                                />
+                            :   <Link to="/cart" className="btn btn-success d-block">Terminar mi compra</Link>
+                    }
 
-            <button className="btn btn-primary" onClick={handleVolver}>Volver</button>
-            <button className="btn btn-outline-primary" onClick={handleVolverInicio}>Volver al inicio</button>
+                    <button className="btn btn-primary" onClick={handleVolver}>Volver</button>
+                    <button className="btn btn-outline-primary" onClick={handleVolverInicio}>Volver al inicio</button>
+                </div>
+            
+            </div>
         </div>
     )
 }
