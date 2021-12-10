@@ -15,21 +15,23 @@ export const ItemDetailContainer = () => {
     const { itemId } = useParams()
 
     useEffect(()=>{
+
         setLoading(true)
 
-        const productosRef = collection (db,'productos')
-        const docRef = doc(db,'productos',itemId)
-        getDoc(docRef)
-        .then((doc)=>{
-            setItem({
-                id:doc.id,
-                ...doc.data()
-            })
-        })
-        .finally(()=>{
-            setLoading(false)
-        })
+        const productosRef = collection(db, 'productos')
+        const docRef = doc(productosRef, itemId)
         
+        getDoc(docRef)
+            .then((doc) => {
+                setItem({
+                    id: doc.id,
+                    ...doc.data()
+                })
+            })
+            .finally(()=>{
+                setLoading(false)
+            })
+
     }, [itemId])
 
     return (

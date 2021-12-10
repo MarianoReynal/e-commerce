@@ -3,6 +3,7 @@ import { Navigate, useRoutes } from 'react-router'
 import { CartView } from '../components/layout/CartView/CartView'
 import { ItemDetailContainer } from '../components/layout/ItemDetailContainer/ItemDetailContainer'
 import { ItemListContainer } from '../components/layout/ItemListContainer/ItemListContainer'
+import { Checkout } from '../components/layout/Checkout/Checkout.js'
 
 export const AppRouter = () => {
 
@@ -11,6 +12,7 @@ export const AppRouter = () => {
         {path: "/productos/:catId", element: <ItemListContainer/>},
         {path: "/detail/:itemId", element: <ItemDetailContainer/>},
         {path: "/cart", element: <CartView/>},
+        {path: "/checkout", element: <Checkout/>},
         {path: "*", element: <Navigate to="/"/>}
     ])
 

@@ -14,23 +14,23 @@ export const ItemListContainer = () => {
 
     useEffect(() => {
         setLoading(true)
-        //
-        const productosRef = collection(db,'productos')
-        
-        const q = catId ? query(productosRef, where('category','==',catId) ) : productosRef
-        //
+       
+        // 1.- armar la referencia
+        const productosRef = collection(db, 'productos')
+        const q = catId ? query(productosRef, where('category', '==', catId)) : productosRef
+        // 2.- GET a esa ref
         getDocs(q)
-        .then((collection)=>{
-            const items = collection.docs.map((doc)=>({
-                id:doc.id,
-                ...doc.data()
-            }))
+            .then((collection) => {
+                const items = collection.docs.map((doc) => ({
+                    id: doc.id,
+                    ...doc.data()
+                }))
 
-            setProductos(items)
-        })
-        .finally(()=>{
-            setLoading(false)
-        })
+                setProductos(items)
+            })
+            .finally(() => {
+                setLoading(false)
+            })
 
     }, [catId])
 
