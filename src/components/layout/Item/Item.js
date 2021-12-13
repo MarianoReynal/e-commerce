@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import './Item.scss'
 
 export const Item = ({id, name, img, desc, price, category}) => {
 
@@ -11,7 +12,7 @@ export const Item = ({id, name, img, desc, price, category}) => {
                 <p className="card-text text-center">Precio: ${price}</p>
                 <p className="card-text text-center">{desc}</p>
                 <p className="card-text text-center">{category}</p>
-                <Link to={`/detail/${id}`} className="btn btn-primary text-center">Ver más</Link>
+                <Link to={`/detail/${id}`} className="btn btn-primary item">Ver más</Link>
             </div>
         </article>
     )
