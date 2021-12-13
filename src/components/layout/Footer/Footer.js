@@ -3,10 +3,10 @@ import React from 'react'
 const footer = () => {
     return (
         <footer className="bg-dark text-white py-4 footer">
-      <div class="container">
-        <nav class="row">
+      <div className="container">
+        <nav className="row">
           
-           <ul class="col-lg-6 col-xs-6 list-unstyled">
+           <ul className="col-lg-6 col-xs-6 list-unstyled">
             <li className="font-weight-bold text-uppercase">CONTACTO</li>
             <li>
               <a href="#" class="text-reset">
@@ -25,9 +25,9 @@ const footer = () => {
         
           </ul>
           
-           <ul class="col-lg-6 col-xs-6 list-unstyled">
-            <li class="font-weight-bold text-uppercase">REDES SOCIALES</li>
-            <li class="d-flex justify-content-between">
+           <ul className="col-lg-6 col-xs-6 list-unstyled">
+            <li className="font-weight-bold text-uppercase">REDES SOCIALES</li>
+            <li className="d-flex justify-content-between">
               
               <a href="https://www.facebook.com/" class="text-reset">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
@@ -57,9 +57,9 @@ const footer = () => {
           </ul>
         </nav>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 col-xs-12 text-grey" >
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-12 col-xs-12 text-grey" >
            <span> Copyright 2021 todos los derechos reservados. E-commerce. Av. Figueroa Alcorta 767 - Morón - Buenos Aires. Argentina</span>
           </div>
         </div>
