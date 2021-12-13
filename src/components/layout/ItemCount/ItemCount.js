@@ -1,5 +1,5 @@
 import React from 'react'
-import { btnConfig } from './btnConfig'
+import  {btnConfig}  from '../ItemCount/BtnConfig'
 
 export const ItemCount = ( {sumar, restar, cantidad, onAdd, max} ) => {
 
