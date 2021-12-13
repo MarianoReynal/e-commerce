@@ -1,7 +1,6 @@
 import React, { useContext } from 'react'
 import { Navigate } from 'react-router'
 import { CartContext } from '../../../context/CartContext'
-import { validarDatos } from '../../helpers/validarDatos'
 import { generarOrden } from '../../../firebase/generarOrden'
 import { Formik } from 'formik'
 import * as Yup from 'yup'

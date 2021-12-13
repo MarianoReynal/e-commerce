@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router'
-import { useCollection } from '../../hooks/useCollection'
+import { useCollection } from '../../../hooks/useCollection'
 import { ItemList } from '../ItemList/ItemList'
 import { Loader } from '../Loader/Loader'
 

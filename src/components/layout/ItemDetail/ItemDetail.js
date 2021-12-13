@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react'
 import { useNavigate } from 'react-router'
 import { Link } from 'react-router-dom'
 import { CartContext } from '../../../context/CartContext'
-import { useCounter } from '../../hooks/useCounter'
+import { useCounter } from '../../../hooks/useCounter'
 import { ItemCount } from '../ItemCount/ItemCount'
 
 export const ItemDetail = ({id, name, img, desc, price, category, stock}) => {
