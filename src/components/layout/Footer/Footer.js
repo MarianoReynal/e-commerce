@@ -2,12 +2,12 @@ import React from 'react'
 
 const footer = () => {
     return (
-        <footer class="bg-dark text-white py-4 footer">
+        <footer className="bg-dark text-white py-4 footer">
       <div class="container">
         <nav class="row">
           
            <ul class="col-lg-6 col-xs-6 list-unstyled">
-            <li class="font-weight-bold text-uppercase">CONTACTO</li>
+            <li className="font-weight-bold text-uppercase">CONTACTO</li>
             <li>
               <a href="#" class="text-reset">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">

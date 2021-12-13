@@ -6,7 +6,7 @@ import './NavBar.scss'
 
 export default function NavBar(){
   return(
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="dark" variant='dark' expand="lg" className='text-white'>
       <Container>
         <Navbar.Brand href="#home" className="logo">
         <Link to="/"><h1>E-commerce</h1></Link>
