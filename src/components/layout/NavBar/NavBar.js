@@ -15,8 +15,10 @@ export default function NavBar(){
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="navNav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">link </Nav.Link>
+            
+          <Link to="/"><Nav.Link href="#home">Home</Nav.Link></Link>
+           
+            
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Productos</NavDropdown.Item>
 
@@ -45,7 +47,7 @@ export default function NavBar(){
               </NavDropdown.Item>
               
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.8">Separated link</NavDropdown.Item>
+              
             </NavDropdown>
             <Nav.Link href="#link"><CartWidget/></Nav.Link>
           </Nav>
