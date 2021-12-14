@@ -8,7 +8,7 @@ export const ItemList = ({items}) => {
         <Container className="my-5">
             <h2>Productos</h2>
             <hr/>
-            <Row>
+            <Row style={{display:"flex" ,justifyContent:"center"}}>
                 {/* {items.map((prod) => <Item prod={prod}/>)} */}
                 {items.map((prod) => <Item key={prod.id} {...prod}/>)}
             </Row>
