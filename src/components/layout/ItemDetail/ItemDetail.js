@@ -37,7 +37,7 @@ export const ItemDetail = ({id, name, img, desc, price, category, stock}) => {
         <div className="container">
             <div className="row">
                 
-                <div className="col-lg-6 col-xs-6">
+                <div className="col-lg-6 col-xs-6" style={{display:"flex" ,justifyContent:"center"}}>
                     <img src={img} alt={name} className='card m-2 imgDetail'/>
                 </div>  
                 <div className="col-lg-6 col-xs-6">   
