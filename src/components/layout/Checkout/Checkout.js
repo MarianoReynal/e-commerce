@@ -36,7 +36,7 @@ export const Checkout = () => {
                 ? <Navigate to="/"/>
                 :
                     <div className="container my-5">
-                        <h2>Resumen de compra</h2>
+                        <h2>Completa el formulario para generar la orden</h2>
                         <hr/>
 
                         <Formik
