@@ -20,8 +20,8 @@ export const CartView = () => {
 
     return (
         <div className="container my-5">
-            <h2>Cart View</h2>
-            <hr/>
+        
+            
             <section>
                 {
                     carrito.map((prod) => <CartItem key={prod.id} {...prod}/>)
